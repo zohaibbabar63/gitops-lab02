@@ -30,6 +30,5 @@ jobs:
           test -d tests
           echo "Required files/directories exist."
 
-      - name: Run basic validation
-        run: |
-          echo "CI validation completed successfully."
+     - name: Run automated validation
+  run: bash tests/validate.sh
